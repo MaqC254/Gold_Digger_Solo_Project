@@ -6,7 +6,6 @@ import { handlePost } from './routeHandlers/handlePost.js'
 const PORT = 3000
 const baseDir = import.meta.dirname
 const server = http.createServer(async (req,res) => {
-    console.log(req.url)
     if(req.url === '/invest' && req.method === 'POST'){
         await handlePost(req,res)
     }
