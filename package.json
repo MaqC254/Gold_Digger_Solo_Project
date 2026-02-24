@@ -1,0 +1,24 @@
+{
+  "name": "gold-digger",
+  "version": "1.0.0",
+  "description": "Gold buying app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaqC254/Gold_Digger_Solo_Project.git"
+  },
+  "author": "Maxwell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaqC254/Gold_Digger_Solo_Project/issues"
+  },
+  "homepage": "https://github.com/MaqC254/Gold_Digger_Solo_Project#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
