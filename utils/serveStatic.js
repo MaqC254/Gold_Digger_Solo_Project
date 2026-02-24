@@ -7,7 +7,7 @@ export function serveStatic(req,res,baseDir){
     let pathToResource = path.join(baseDir,'public',req.url === '/' ? 'index.html' : req.url)
     fs.readFile(pathToResource,(err,data) => {
         if(err){
-            sendResponse(res,'text/html',501,err)
+            sendResponse(res,'text/html',501,err.message)
         }else{
             let ext = path.extname(pathToResource)
             let contentType = getContentType(ext)
